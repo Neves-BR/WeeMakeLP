@@ -1075,9 +1075,6 @@ a {
     gap: 28px;
     padding-top: 52px;
     min-height: auto;
-    transform: scale(0.70);
-    transform-origin: top center;
-    width: 100%;
   }
 
   .site-header {
@@ -1152,7 +1149,8 @@ a {
     margin-left: 0;
     margin-right: 0;
     border-radius: 20px;
-    transform: none;
+    transform: scale(0.50);
+    transform-origin: top center;
     animation: none;
     overflow: hidden;
     width: 100%;
