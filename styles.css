@@ -222,18 +222,18 @@ a {
 }
 
 .hero-copy {
-  text-align: center;
+  text-align: left;
 }
 
 .hero-copy p,
 .hero-actions,
 .hero-metrics {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .hero-actions {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero-actions {
@@ -1157,6 +1157,21 @@ a {
   .hero {
     min-height: auto;
     padding: 38px 0 52px;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-copy p,
+  .hero-actions,
+  .hero-metrics {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
   }
 
   .hero-copy p {
