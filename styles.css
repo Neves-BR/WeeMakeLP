@@ -1191,46 +1191,152 @@ a {
 
   .hero-visual {
     min-height: auto;
+    width: 100%;
+    max-width: none;
   }
 
   .dashboard {
-    margin-top: 8px;
+    margin-top: 12px;
     border-radius: 24px;
     transform: none;
     animation: none;
+    overflow: hidden;
   }
 
   .dashboard-topbar {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    padding: 16px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px;
+    font-size: 0.75rem;
+  }
+
+  .window-dots {
+    flex-shrink: 0;
+  }
+
+  .window-dots span {
+    width: 8px;
+    height: 8px;
   }
 
   .dashboard-content {
     grid-template-columns: 1fr;
-    padding: 14px;
+    gap: 12px;
+    padding: 12px;
+    min-width: 0;
+  }
+
+  .conversation-panel,
+  .insight-panel {
+    border-radius: 18px;
+    padding: 12px;
+  }
+
+  .panel-heading {
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+  .message {
+    gap: 8px;
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+  }
+
+  .message strong {
+    font-size: 0.75rem;
+  }
+
+  .message p {
+    font-size: 0.65rem;
   }
 
   .assistant-card {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .spark-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .assistant-card span {
+    font-size: 0.65rem;
+  }
+
+  .assistant-card strong {
+    font-size: 0.8rem;
+  }
+
+  .assistant-card p {
+    font-size: 0.7rem;
   }
 
   .connection-grid {
     inset: 0;
+    border-radius: 24px;
   }
 
   .pipeline {
     grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .pipeline-stage {
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .pipeline-stage span {
+    font-size: 0.65rem;
+  }
+
+  .pipeline-stage strong {
+    font-size: 1.2rem;
+    margin-top: 6px;
   }
 
   .analytics {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: auto;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .analytics span {
+    font-size: 0.7rem;
+  }
+
+  .analytics strong {
+    font-size: 1.4rem;
   }
 
   .bars {
-    width: 100%;
+    width: 80px;
+    height: 60px;
+    gap: 6px;
+  }
+
+  .bars span {
+    border-radius: 999px 999px 6px 6px;
+    min-height: 14px;
   }
 
   .problem-section,
