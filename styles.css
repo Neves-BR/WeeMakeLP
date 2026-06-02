@@ -1261,6 +1261,20 @@ a {
     flex-shrink: 0;
   }
 
+  .spark-icon::before {
+    top: 7px;
+    left: 13px;
+    width: 2px;
+    height: 14px;
+  }
+
+  .spark-icon::after {
+    top: 13px;
+    left: 7px;
+    width: 14px;
+    height: 2px;
+  }
+
   .assistant-card span {
     font-size: 0.65rem;
   }
