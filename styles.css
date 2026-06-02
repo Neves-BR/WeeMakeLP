@@ -1069,166 +1069,7 @@ a {
   }
 }
 
-@media (max-width: 820px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding-top: 52px;
-    min-height: auto;
-  }
-
-  .site-header {
-    align-items: flex-start;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .header-cta {
-    min-height: 42px;
-    padding: 0 13px;
-    font-size: 0.78rem;
-  }
-
-  .brand-logo {
-    width: min(100%, 360px);
-  }
-
-  .brand small {
-    white-space: normal;
-  }
-
-  .feature-grid,
-  .testimonial-grid,
-  .trust-row,
-  .timeline,
-  .hero-metrics,
-  .benefit-list {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline::before {
-    display: none;
-  }
-
-  .dashboard-content {
-    grid-template-columns: 1fr;
-  }
-
-  .conversation-panel,
-  .insight-panel {
-    min-width: 0;
-  }
-
-  .pipeline {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-visual {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    min-height: auto;
-  }
-
-  .final-cta,
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .final-cta .btn {
-    width: 100%;
-  }
-
-  .dashboard {
-    margin-top: 12px;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 20px;
-    transform: none;
-    animation: none;
-    overflow: hidden;
-    width: 100%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  }
-
-  .hero-visual {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    min-height: auto;
-  }
-
-  .dashboard-topbar {
-    gap: 12px;
-    padding: 14px;
-    font-size: 0.8rem;
-  }
-
-  .window-dots span {
-    width: 10px;
-    height: 10px;
-  }
-
-  .dashboard-content {
-    gap: 12px;
-    padding: 12px;
-  }
-
-  .conversation-panel,
-  .insight-panel {
-    border-radius: 18px;
-    padding: 12px;
-  }
-
-  .message {
-    gap: 8px;
-    padding: 10px;
-  }
-
-  .avatar {
-    width: 28px;
-    height: 28px;
-  }
-
-  .assistant-card {
-    gap: 10px;
-    padding: 12px;
-    border-radius: 16px;
-  }
-
-  .spark-icon {
-    width: 36px;
-    height: 36px;
-  }
-
-  .pipeline-stage {
-    padding: 10px;
-    border-radius: 14px;
-  }
-
-  .analytics {
-    gap: 12px;
-    padding: 12px;
-    border-radius: 16px;
-    flex-direction: row;
-  }
-
-  .bars {
-    width: 80px;
-    height: 60px;
-  }
-
-  .connection-grid {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .hero {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -1254,6 +1095,10 @@ a {
 
   .pipeline {
     grid-template-columns: 1fr;
+  }
+
+  .connection-grid {
+    display: none;
   }
   .site-header,
   .section-shell,
@@ -1411,9 +1256,8 @@ a {
   }
 
   .spark-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 12px;
+    width: 28px;
+    height: 28px;
     flex-shrink: 0;
   }
 
