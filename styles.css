@@ -1107,6 +1107,25 @@ a {
     display: none;
   }
 
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .conversation-panel,
+  .insight-panel {
+    min-width: 0;
+  }
+
+  .pipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
   .final-cta,
   .footer-inner {
     flex-direction: column;
@@ -1115,6 +1134,69 @@ a {
 
   .final-cta .btn {
     width: 100%;
+  }
+
+  .dashboard {
+    margin-top: 12px;
+    border-radius: 24px;
+    transform: none;
+    animation: none;
+    overflow: hidden;
+  }
+
+  .dashboard-topbar {
+    gap: 12px;
+    padding: 14px;
+    font-size: 0.8rem;
+  }
+
+  .dashboard-content {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .conversation-panel,
+  .insight-panel {
+    border-radius: 18px;
+    padding: 12px;
+  }
+
+  .message {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .assistant-card {
+    gap: 10px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .spark-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pipeline-stage {
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .analytics {
+    gap: 12px;
+    padding: 12px;
+    border-radius: 16px;
+    flex-direction: row;
+  }
+
+  .bars {
+    width: 80px;
+    height: 60px;
   }
 }
 
