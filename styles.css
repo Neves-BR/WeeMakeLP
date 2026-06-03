@@ -304,6 +304,7 @@ a {
   background: rgba(8, 8, 32, 0.88);
   box-shadow: var(--shadow);
   transform: rotateX(8deg) rotateY(-10deg) rotateZ(1deg);
+  animation: floatDashboard 5.5s ease-in-out infinite;
   transform-origin: center;
   backdrop-filter: blur(18px);
   animation: floatDashboard 5.5s ease-in-out infinite;
@@ -355,7 +356,7 @@ a {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
     gap: 2px;
     padding: 2px;
     min-width: 0;
