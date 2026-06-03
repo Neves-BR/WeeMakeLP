@@ -351,15 +351,16 @@ a {
   background: #22c55e;
 }
 
-.dashboard-content {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 0.6fr 1.4fr;
-  gap: 2px;
-  padding: 2px;
-  min-width: 0;
-}
+  .dashboard-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    gap: 2px;
+    padding: 2px;
+    min-width: 0;
+    max-width: 100%;
+  }
 
 @media (max-width: 480px) {
   .dashboard-content {
