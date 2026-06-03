@@ -310,6 +310,19 @@ a {
   animation: floatDashboard 5.5s ease-in-out infinite;
 }
 
+/* Image mockup replacement */
+.dashboard {
+  background-image: url("./assets/dashboard.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide original dashboard inner elements */
+.dashboard > * {
+  display: none;
+}
+
 .dashboard::before {
   content: "";
   position: absolute;
