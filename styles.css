@@ -16,10 +16,23 @@
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
   --soft-shadow: 0 18px 55px rgba(0, 0, 0, 0.32);
   --radius: 28px;
+  --bg: #020212;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-bright: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.12);
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --accent: #9d4edd;
+  --success: #16a34a;
+  --soft-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -36,6 +49,9 @@ body {
   color: var(--text);
   font-family: "Manrope", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
+  background-color: var(--bg);
+  color: var(--text-main);
+  overflow-x: hidden;
 }
 
 a {
@@ -139,6 +155,7 @@ a {
   margin-right: 10px;
   flex: 0 0 auto;
 }
+
 .wa-icon svg {
   width: 100%;
   height: 100%;
@@ -178,23 +195,15 @@ a {
   padding: 64px 0 74px;
 }
 
-.eyebrow,
-.label {
-  display: inline-flex;
-  align-items: center;
+.eyebrow {
+  display: flex;
   justify-content: center;
-  max-width: 100%;
+  align-items: center;
   gap: 9px;
-  color: var(--primary);
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   text-align: center;
 }
 
-.eyebrow span {
-  flex: 0 0 auto;
+.eyebrow-dot {
   width: 8px;
   height: 8px;
   border-radius: 999px;
@@ -202,16 +211,8 @@ a {
   box-shadow: 0 0 0 7px rgba(34, 197, 94, 0.11);
 }
 
-.eyebrow .eyebrow-text {
-  flex: 1 1 auto;
-  width: auto;
-  height: auto;
-  min-width: 0;
-  max-width: 100%;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-  overflow-wrap: anywhere;
+.eyebrow-text {
+  text-align: center;
 }
 
 .hero h1,
@@ -884,27 +885,30 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
+  padding: 40px;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 12%;
-  right: 12%;
-  top: 40px;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, 0.45), rgba(124, 58, 237, 0));
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--accent), transparent);
+  opacity: 0.5;
 }
 
 .timeline-step {
   position: relative;
   padding: 28px;
-  border: 1px solid var(--line);
+  border: var(--glass-border);
   background: var(--surface);
   box-shadow: var(--soft-shadow);
   backdrop-filter: blur(14px);
   text-align: center;
+  border-radius: 24px;
 }
 
 .timeline-step span {
@@ -914,8 +918,8 @@ a {
   min-height: 32px;
   padding: 0 12px;
   border-radius: 999px;
-  background: rgba(245, 243, 255, 0.1);
-  color: #ddd6fe;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent);
   font-size: 0.78rem;
   font-weight: 800;
 }
@@ -1065,6 +1069,7 @@ a {
   opacity: 0;
   transform: translateY(22px);
   transition: opacity 680ms ease, transform 680ms ease;
+  will-change: opacity, transform;
 }
 
 [data-animate].is-visible {
@@ -1085,6 +1090,10 @@ a {
 }
 
 @media (max-width: 1020px) {
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
 
   .hero,
   .benefit-layout {
