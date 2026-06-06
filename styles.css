@@ -36,6 +36,7 @@
 }
 
 html {
+  scroll-padding-top: 30px; 
   scroll-behavior: smooth;
 }
 
@@ -66,10 +67,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
   width: min(1180px, calc(100% - 32px));
   margin: 16px auto 0;
-  padding: 12px 14px;
+  padding: 12px 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 22px;
   background: rgba(5, 5, 24, 0.72);
@@ -240,6 +241,12 @@ a {
 
 .hero-copy {
   text-align: left;
+}
+
+.hero-copy .eyebrow {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 16px auto; 
 }
 
 .hero-copy p,
@@ -1125,7 +1132,7 @@ a {
   .site-header,
   .section-shell,
   .footer-inner {
-    width: min(100% - 22px, 1180px);
+    width: min(100% - 22px, 1280px);
   }
 
   .site-header {
