@@ -1,0 +1,18 @@
+# WeeMake - Soluções em Inteligência Artificial
+
+> A WeeMake desenvolve soluções de IA e automação personalizadas para otimizar negócios.
+
+## Sobre nós
+Somos especialistas em integrar Inteligência Artificial para aumentar a produtividade, automatizar processos e gerar valor para o mercado B2B e B2C.
+
+## Serviços
+- Desenvolvimento de IA sob medida.
+- Automação de processos empresariais.
+- Consultoria tecnológica.
+
+## Contato
+- Site: https://lp-ia.weemake.com.br/
+- WhatsApp para negócios: +55 (15) 99619-7477
+- Instagram: https://instagram.com/weemake.ai
+
+*Este arquivo fornece o contexto essencial para agentes de IA e Large Language Models (LLMs).*
